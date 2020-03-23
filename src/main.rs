@@ -8,10 +8,12 @@ fn main() {
     }
 }
 
+/// Calculate the sum that each row/column/diagonal of a magic square of order-n would equal.
 fn magic_sum(n: i32) -> i32 {
     (n.pow(4) + n.pow(2)) / (2 * n)
 }
 
+/// Generate a random (potentially magic) order-n square, with numbers ranging from 1 to n^2.
 fn random_square(n: i32) -> Vec<Vec<i32>> {
     let mut rows = Vec::new();
 
@@ -24,7 +26,3 @@ fn random_square(n: i32) -> Vec<Vec<i32>> {
     }
     return rows;
 }
-/* So the main idea, then, is to do something interesting with this. Perhaps
-grids, board games, etc. Who knows, currently? Not me. I'll figure it out
-or I won't. We'll see.
-*/
