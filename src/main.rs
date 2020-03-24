@@ -29,5 +29,6 @@ fn random_square(n: i32) -> Vec<Vec<i32>> {
 
 /// Generate sequences of numbers that add up to a certain total, given a starting collection of numbers.
 fn magic_sequences(ns: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
+    let mut delta = target;
     Vec::new()
 }
