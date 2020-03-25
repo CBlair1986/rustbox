@@ -30,5 +30,21 @@ fn random_square(n: i32) -> Vec<Vec<i32>> {
 /// Generate sequences of numbers that add up to a certain total, given a starting collection of numbers.
 fn magic_sequences(ns: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
     let mut delta = target;
+    let mut old_delta = target;
+    let mut nums = Vec::<Vec<i32>>::new();
+
+    for n in ns {
+        let mut seq = Vec::<i32>::new();
+        if (n > delta) {
+            continue;
+        }
+
+        old_delta = delta;
+        delta -= n;
+
+        seq.push(n);
+
+    }
     Vec::new()
 }
+// TODO: I need to do something like ns.permutations(5).filter(|coll| coll.sum() = target)
