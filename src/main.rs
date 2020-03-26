@@ -6,6 +6,7 @@ fn main() {
     for n in 3..6 {
         println!("Random square (Order {}): {:?}", n, random_square(n))
     }
+    println!("Magic sequences for order-3 square: {:?}", magic_sequences())
 }
 
 /// Calculate the sum that each row/column/diagonal of a magic square of order-n would equal.
